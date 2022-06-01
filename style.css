@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.3;
+}
+.team{
+    text-align: center;
+}
+.team_info h1{
+    color: rgb(38, 35, 59);
+    margin: 5px;
+}
+.team_info p{
+    font-size: 15px;
+    color: gray;
+}
+.team_flex{
+    width: 90%;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.flex{
+    max-width: 30%;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.flex img{
+   
+    width: 150px;
+    height: 150px;
+ }
+
+ .flex:hover{
+    background-color: #ddd;
+    border-radius: 20px;
+} 
+.name{
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.job{
+    color: gray;
+    font-style: italic;
+    margin: 8px;
+}
+.about{
+    font-size: 15px;
+    color: dimgrey;
+    padding: 10px;
+    margin: 6px;
+}
+.social a{
+    display: inline-block;
+    margin: 8px;
+}
+.social i{
+    color: dimgray;
+}
+.social a:hover{
+    transform: scale(1.5);
+}
+
+
+#first .job{
+    color: rgb(236, 106, 106);
+}
+#first .social i{
+    color: rgb(236, 106, 106);
+}
+#second .job{
+    color: rgb(235, 235, 95);
+}
+#second .social i{
+    color: rgb(235, 235, 95);
+}
+#third .job{
+    color: rgb(3, 3, 71);
+}
+#third .social i{
+    color: rgb(3, 3, 71);
+}
+
+
+
+
+@media(max-width:660px){
+    .team_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex{
+       max-width: 100%;
+    }
+}
